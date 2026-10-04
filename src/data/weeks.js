@@ -5,9 +5,6 @@
  */
 
 import { TOTAL_WEEKS } from '../config';
-import ganttChart from '../assets/charts/gantt.jpg';
-import pertChart from '../assets/charts/pert.jpg';
-import wbsChart from '../assets/charts/wbs.jpg';
 
 const briefings = [
   {
@@ -302,23 +299,6 @@ const briefings = [
         title: 'Risk response structure',
         detail:
           'Proactive steps prevent risks, detective measures spot early warning signs, responsive actions deal with a risk when it occurs, and reactive measures limit the impact afterwards.',
-      },
-    ],
-    charts: [
-      {
-        title: 'Work Breakdown Structure',
-        caption: 'Six phases and 24 work packages, from Initiation to Finalisation.',
-        src: wbsChart,
-      },
-      {
-        title: 'Project schedule (Gantt)',
-        caption: '19 working days, 7 September to 2 October 2026, with the critical path highlighted.',
-        src: ganttChart,
-      },
-      {
-        title: 'PERT network and critical path',
-        caption: 'Three-point estimates for every task, using TE = (O + 4M + P) / 6.',
-        src: pertChart,
       },
     ],
     nextWeek:

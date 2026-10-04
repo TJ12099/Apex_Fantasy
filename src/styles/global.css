@@ -729,51 +729,6 @@ ol {
   font-weight: 600;
   color: #fff;
 }
-
-.chart-list {
-  display: grid;
-  gap: 1rem;
-  margin-top: 0.4rem;
-}
-
-.chart-card {
-  padding: 0.75rem;
-}
-
-.chart-link {
-  display: block;
-  border: 1px solid var(--border);
-  border-radius: 2px;
-  overflow: hidden;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
-}
-
-.chart-link:hover,
-.chart-link:focus-visible {
-  border-color: var(--border-strong);
-  box-shadow: 0 0 24px rgba(58, 160, 255, 0.2);
-}
-
-.chart-link img {
-  display: block;
-  width: 100%;
-  aspect-ratio: 16 / 9;
-  object-fit: cover;
-}
-
-.chart-card figcaption {
-  display: flex;
-  flex-direction: column;
-  gap: 0.3rem;
-  padding: 0.3rem 0.5rem 0.4rem;
-}
-
-.chart-card h3 {
-  font-size: 1.15rem;
-  font-weight: 600;
-  color: #fff;
-}
-
 /* ─── Weeks list ─── */
 
 .week-list {
