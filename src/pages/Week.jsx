@@ -111,6 +111,29 @@ export default function Week() {
           <p className="body">{week.progressNote}</p>
         </section>
 
+        {week.charts && (
+          <section aria-labelledby="charts-heading" className="concepts">
+            <p className="eyebrow">From the presentation</p>
+            <h2 id="charts-heading" className="display display-sm">
+              Charts and diagrams
+            </h2>
+            <p className="body">Tap a chart to open it full size.</p>
+            <div className="chart-list">
+              {week.charts.map((chart) => (
+                <figure key={chart.title} className="card chart-card">
+                  <a href={chart.src} target="_blank" rel="noreferrer" className="chart-link">
+                    <img src={chart.src} alt={chart.title} loading="lazy" />
+                  </a>
+                  <figcaption>
+                    <h3>{chart.title}</h3>
+                    <p className="body">{chart.caption}</p>
+                  </figcaption>
+                </figure>
+              ))}
+            </div>
+          </section>
+        )}
+
         <section aria-labelledby="concepts-heading" className="concepts">
           <p className="eyebrow">Covered this week</p>
           <h2 id="concepts-heading" className="display display-sm">

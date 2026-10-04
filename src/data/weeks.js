@@ -5,6 +5,9 @@
  */
 
 import { TOTAL_WEEKS } from '../config';
+import ganttChart from '../assets/charts/gantt.jpg';
+import pertChart from '../assets/charts/pert.jpg';
+import wbsChart from '../assets/charts/wbs.jpg';
 
 const briefings = [
   {
@@ -262,39 +265,60 @@ const briefings = [
       },
     ],
     nextWeek:
-      'Week 8 presents the solution options, our recommendation, feasibility and mentor feedback from the mini-RFC.',
+      'Week 8 presents the Nexus Project Plan: the Work Breakdown Structure, Gantt chart, PERT network and critical path, key risks and feasibility.',
   },
   {
     week: 8,
-    phase: 'Solution Recommendation',
-    title: 'Solution Options and Mini-RFC',
+    phase: 'Project Planning',
+    title: 'The Nexus Project Plan',
     about:
-      'This presentation compares feasible ways to meet the requirements, recommends one, and shares feedback from our mini Request for Comments.',
+      'This presentation turns the Nexus project context into a complete Project Plan, moving from what the project is to how we will deliver it: the work breakdown, schedule, critical path, risks and feasibility.',
     summary: [
-      'One or two solution options are outlined with their pros and cons, building on better information management, automation of repetitive work and AI-assisted decision support.',
-      'Each option is assessed for feasibility across people, process and technology.',
-      'A one-page summary is shared with our supervisor for comment, and the recommendation is refined in response.',
+      'Nexus information, project and communication activities are spread across platforms and manual processes. Our response is a structured improvement plan and an assessment of a conceptual AI-Assisted Client Intelligence Dashboard.',
+      'The Work Breakdown Structure splits the work into six phases (Initiation, Planning, Schedule Analysis, Risk Management, Feasibility and Finalisation) and 24 work packages.',
+      'The Gantt chart schedules those tasks over 19 working days, from 7 September to 2 October 2026, and the PERT network uses (O + 4M + P) / 6 to confirm the critical path.',
+      'Seven key risks are managed through proactive, detective, responsive and reactive measures, and the feasibility study confirms the hardware, software and person-time effort needed.',
     ],
     objectives: [
-      'Present the solution options and their pros and cons.',
-      'Justify the recommended option and its feasibility.',
-      'Share the mini-RFC feedback and what changed as a result.',
+      'Show how the project is broken down into phases and work packages.',
+      'Present the schedule, PERT estimates and critical path.',
+      'Explain the key risks and how we will respond to them.',
+      'Confirm the technical and economic feasibility of the plan.',
     ],
     progressNote:
-      'A recommended solution is identified and tested with our mentor. The remaining work is consolidating the Project Report.',
+      'The Project Plan is complete. Scope, WBS, Gantt, PERT, critical path, risks and feasibility now connect in one coherent plan for the rest of the project.',
     concepts: [
       {
-        title: 'Solution options',
-        detail: 'Alternative ways to meet the requirements, compared before one is recommended.',
-      },
-      {
-        title: 'Feasibility',
-        detail: 'Whether an option is realistic for Nexus in terms of people, process and technology.',
-      },
-      {
-        title: 'Mini-RFC',
+        title: 'Work Breakdown Structure',
         detail:
-          'A short Request for Comments: sharing a one-page summary with the mentor, collecting feedback and adjusting the report.',
+          'The bridge from what the project is to how we will execute it: six phases broken down into 24 numbered work packages.',
+      },
+      {
+        title: 'PERT and the critical path',
+        detail:
+          'Optimistic, most-likely and pessimistic estimates give each task an expected time. The critical path is the chain of dependent tasks that sets the 19-day finish.',
+      },
+      {
+        title: 'Risk response structure',
+        detail:
+          'Proactive steps prevent risks, detective measures spot early warning signs, responsive actions deal with a risk when it occurs, and reactive measures limit the impact afterwards.',
+      },
+    ],
+    charts: [
+      {
+        title: 'Work Breakdown Structure',
+        caption: 'Six phases and 24 work packages, from Initiation to Finalisation.',
+        src: wbsChart,
+      },
+      {
+        title: 'Project schedule (Gantt)',
+        caption: '19 working days, 7 September to 2 October 2026, with the critical path highlighted.',
+        src: ganttChart,
+      },
+      {
+        title: 'PERT network and critical path',
+        caption: 'Three-point estimates for every task, using TE = (O + 4M + P) / 6.',
+        src: pertChart,
       },
     ],
     nextWeek:
